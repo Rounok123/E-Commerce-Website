@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prd-detail</title>
+        <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1326px)" href="../../static/css/phone.css">
+</head>
+<body>
+    {{!-- ----------------------NavBar--------------------------- --}}
+
+    {{>nav}}    {{!--  passing the partials  --}}    
+
+    <div id="main-cont">
+        <img src="../../static/img/realme.jpeg">
+
+        <div id="details">
+            <h1>Realme 8 Pro</h1>
+            <h2>$800.00</h2>
+            <input type="number" value="1">
+            <a href="/cart"><button>Add To Cart</button></a>
+            <h2>product details</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eligendi suscipit totam quae rem temporibus eius quis, recusandae corrupti, sint est! Nobis libero animi atque modi iste similique nisi quibusdam!</p>
+        </div>
+
+    </div>
+
+    {{!-- ----------------------Footer--------------------------- --}}
+
+    {{>footer}} {{!--  passing the partials  --}}
+</body>
+
+</html>

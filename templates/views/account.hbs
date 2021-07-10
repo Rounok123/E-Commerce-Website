@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is title</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1326px)" href="../../static/css/phone.css">
+</head>
+
+<body>
+
+    {{!-- ----------------------NavBar--------------------------- --}}
+
+    {{>nav}} {{!-- passing the partials --}}
+
+    {{!-- ----------------------Sign up and Login------------------ --}}
+
+    <div id="account-section">
+
+        <div id="account-btn">
+            <button class="btn" id="login-btn">Login</button>
+            <button class="btn" id="signup-btn">Sign up</button>
+        </div>
+
+        {{!-- Signup Form --}}
+
+        <form action="/"  method = "POST" class="form" id="signup">
+            <input type="text" name="names" id="name" placeholder="Name">
+            <input type="text" name="phones" id="phone" placeholder="Phone">
+            <input type="email" name="emails" id="emails" placeholder="Email">
+            <input type="text" name="passwords" id="password" placeholder="Pasword">
+            <input type="text" id="cnfr-password" placeholder="Confirm Pasword">
+
+            <div id="reset-submit">
+                <button type="reset">Reset</button>
+                <button type="submit" id="sbtn">Signup</button>
+            </div>
+        </form>
+
+        {{!-- Login Form --}}
+
+        <form action="#" class="form" id="login">
+            <input type="text" name="phones" id="phone-login" placeholder="Phone">
+            <input type="email" name="emails" id="email-login" placeholder="Email">
+            <input type="text" name="passwords" id="password-login" placeholder="Pasword">
+
+            <div id="reset-submit">
+                <button type="reset">Reset</button>
+                <button type="submit" id="lbtn">Login</button>
+            </div>
+        </form>
+
+        {{!-- ---------------Another login$signin oprions--------------- --}}
+
+        <div id="with-google-twit-facebook">
+            <h1 class="h-secondary">You can also Continue with</h1>
+            <div>
+                <img src="../../static/img/Google Logo.svg">
+                <img src="../../static/img/twiter logo.png">
+                <img src="../../static/img/facebook logo.png">
+            </div>
+        </div>
+    </div>
+
+    {{!-- ----------------------Footer--------------------------- --}}
+
+    {{>footer}} {{!-- passing the partials --}}
+
+
+    <script src="../../static/js/account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+/* ---------------------Navigation Bar-------------------------- */
+#navbar{
+    flex-direction: column;
+}
+
+#logo{
+    padding: 2px;
+    margin: 2px 8px;
+}
+#logo img{
+    height: 30px;
+    width: 31px;
+}
+
+#navbar ul{
+    margin-left: 0px;
+}
+#navbar ul li a {
+    font-size: 0.6rem;
+    padding-bottom: 5px;
+    padding: 1px 8px;
+}
+
+#navbar ul img{
+    height: 23px;
+    margin-left: 5px;
+}
+
+#search{
+    margin-left: 0rem;
+    margin-bottom: 2px;
+}
+#search input{
+    padding: 4px;
+    font-size: 9px;
+} 
+#search button{
+    padding: 5px;
+    font-size: 9px;
+}
+/* ---------------------Chatbox Section-------------------------- */
+#chatbox{
+    position: fixed;
+    bottom: 6px;
+    right: 9px;
+    padding: 4px;
+    font-size: 10px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+/* ---------------------Home Section-------------------------- */
+#home::before{
+    height: 484px;
+}
+#home{
+    height: 396px;
+}
+#home p {
+    font-size: 12px;
+}
+
+/* ---------------------Special Offer Section-------------------------- */
+#special-offer div{
+    height: 3rem;
+    width: 16rem;
+    margin-top: 6px;
+}
+#special-offer div #time{
+    margin-top: 10px;
+    font-size: 17px;
+}
+#special-offer p{
+    width: 17rem;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+/* ---------------------product Section-------------------------- */
+#product-cont{
+    margin-top: 15px;
+}
+#our-product{
+    flex-direction: column;
+}
+#our-product .box img{
+    height: 183px;
+    width: 250px;
+}
+
+/* ---------------------Exclusive product Section-------------------------- */
+
+#exclusive{
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid black;
+}
+#exclusive::before{
+    content: "";
+    height: 600px;
+}
+#exclusive #Band{
+    height: 140px;
+    width: 160px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+}
+#exclusive #exclusive-description{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    text-align: center;
+}
+#exclusive #exclusive-description #App{
+    margin-top: 10px;
+    height: 25px;
+    width: 75px;
+}
+/* ---------------------Client Section-------------------------- */
+
+#clients::before{
+    height: 41rem;
+}
+#client-container {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#client-container img{
+    height: 100px;
+    width: 150px;
+    margin-bottom: 1rem;
+}
+/* ---------------------Footer Section-------------------------- */
+
+#footer{
+    height: 153px;
+}
+#footer::before{
+    height: 149px;
+}
+#copyright{
+    margin-top: 0px;
+    font-size: 1rem;
+}
+#copyright p{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+/* --------------------------Account Page -----------------------------------------*/
+#account-section::before{
+    content: "";
+    height: 569px;
+}
+#account-section{
+    height: 481px;
+}
+.form input{
+    margin: 9px auto;
+    padding: 5px 2px;
+    font-size: 13px;
+    width: 17rem;
+}
+.form #reset-submit{
+    display: block;
+    width: 14rem;
+    margin: auto;
+}
+.form #reset-submit button{
+    padding: 5px 5px;
+    margin-left: 29px;
+    font-size: 16px;
+}
+#with-google-twit-facebook{
+    top: 40px;
+}
+#with-google-twit-facebook img{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+}
+
+/* -------------------------------Aout us Page--------------------------------------- */
+
+#main{
+    height: 275px;
+}
+#main::before{
+    content: "";
+    height: 362px;
+}
+#main #main-heading{
+    font-size: 24px;
+}
+#innovator{
+    height: 41rem;
+}
+#innovator p{
+    margin-top: 2px;
+    font-size:16px;
+}
+#innovator img{
+    height: 34rem;
+}
+#follow-img img{
+    height: 80px;
+    width: 80px;
+    margin: 3px;
+}
+
+/* ------------------------------------Order page------------------------------------ */
+
+#slidshow{
+    width: 13rem;
+    height: 10rem;
+    margin: 10px auto;
+}
+#order{
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 17px;
+    border-radius: 18px;
+}
+#order a{
+    display: block;
+    width: 268px;
+    height: 271px;
+    margin: 15px auto;
+}
+#order a .mobile {
+    height: 205px;
+    width: 113px;
+}
+#order a .laptop {
+    height: 196px;
+    width: 243px;
+}
+#order a .accessories {
+    height: 197px;
+    width: 213px;
+}
+
+/* ----------------------------------prd-detail page------------------------------------ */
+
+#main-cont{
+    height: 16rem;
+}
+#main-cont img{
+    height: 16rem;
+    width: 8rem;
+}
+#main-cont #details{
+    margin-top: 2rem;
+    margin-left: 0.2rem;
+}
+#main-cont h1{
+    font-size: 1.2rem;
+}
+#main-cont h2{
+    font-size: 1.2rem;
+    margin-top: 18px;
+}
+#main-cont input{
+    width: 25px;
+    height: 23px;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+#main-cont button{
+    margin-left: 10px;
+    height: 1.4rem;
+    width: 4rem;
+    font-size: 9px;
+    border-radius: 11px;
+}
+#main-cont p{
+    margin-top: 2px;
+    width: 8rem;
+    font-size: 0.4rem;
+    color: #390091;
+    font-weight: bold;
+}
+/* ---------------------Utility Classes -----------------------------*/
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.6rem;
+    padding: 6px;
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+    padding: 8px;
+    text-align: center;
+}
+.btn{
+    padding: 5px 12px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(156, 80, 80);
+    color: rgb(255, 255, 255);
+    margin: 11px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor:pointer;
+}

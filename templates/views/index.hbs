@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd-Purpose</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1326px)" href="../../static/css/phone.css">
+</head>
+
+<body>
+    {{!-- ----------------------navbar-------------------------- --}}
+
+        {{>nav}}    {{!--  passing the partials  --}}
+
+    {{!-- ----------------------Chatbox Section-------------------------- --}}
+    
+    <button id="chatbox">
+        <a href="#">CHATBOX...</a>
+    </button>
+
+    {{!-- ----------------------Home Section--------------------------- --}}
+
+    <section id="home">
+        <h1 class="h-primary">Welcome To Crowd-Purpose</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn" id="Order Now"><a href="/order">Order Now</a></button>
+    </section>
+    {{!-- ----------------------Special Offer Section--------------------------- --}}
+
+    <section id="special-offer">
+        <h1 class="h-primary">Special Offer and Discounts</h1>
+
+        <h2 class="h-secondary">Sales stars on --></h2>
+        
+        <div>
+            <span id="time"></span>
+        </div>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam omnis rem quis doloribus maxime at suscipit architecto culpa, ex nam quos rerum ipsum. Quia est odit ipsa rerum nam repudiandae, dicta nulla. Quod, culpa. Nisi odit obcaecati magnam est recusandae voluptatem, eius alias voluptas illum vel quae excepturi. Repellendus, voluptates.</p>
+    </section>
+    {{!-- ----------------------Product Section-------------------------- --}}
+
+    <section id="product-cont">
+        <h1 class="h-primary">Products We Provide</h1>
+
+        <section id="our-product">
+            <div class="box">
+                <h1 class="h-secondary">Mobile</h1>
+                <img src="../../static/img/prd-1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?</p>
+            </div>
+
+            <div class="box">
+                <h1 class="h-secondary">Laptop</h1>
+                <img src="../../static/img/prd-2.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?</p>
+            </div>
+
+            <div class="box">
+                <h1 class="h-secondary">Accessories</h1>
+                <img src="../../static/img/prd-3.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eligendi omnis magnam minima iste, deleniti et architecto quasi? Quo, provident?</p>
+            </div>
+        </section>
+    </section>
+
+    {{!-- ---------------------Exclusive product Section------------------------ --}}
+
+    <section id="exclusive">
+        <img src="../../static/img/exclusive.png" id="Band">
+
+        <div id="exclusive-description">
+            <h1 class="h-primary">Our Exclusive product</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo labore quam adipisci quia, corporis nemo cupiditate atque ipsum praesentium asperiores assumenda,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo   </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quo labore quam adipisci quia, corporis nemo cupiditate atque ipsum praesentium asperiores assumenda,  </p>
+
+            <p class="h-secondary">Get Our App From Here</p>
+
+            <img src="../../static/img/play-store.png" id="App">
+        </div>
+    </section>
+
+    {{!-- ----------------------Client Section--------------------------- --}}
+
+    <div id="clients">
+        <h1 class="h-primary">Our Clients</h1>
+        <div id="client-container">
+            <div class="item"><img src="../../static/img/cl-1.jpg"></div>
+            <div class="item"><img src="../../static/img/cl-2.png"></div>
+            <div class="item"><img src="../../static/img/cl-3.jpg"></div>
+            <div class="item"><img src="../../static/img/cl-4.png"></div>
+            <div class="item"><img src="../../static/img/cl-5.jpg"></div>
+        </div>
+    </div>
+
+    {{!-- ----------------------Footer--------------------------- --}}
+
+        {{>footer}} {{!--  passing the partials  --}}
+
+    <script src="../../static/js/index.js"></script> {{!-- Linking the js file --}}
+
+</body>
+
+</html>

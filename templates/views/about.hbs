@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is title</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1326px)" href="../../static/css/phone.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+
+<body>
+
+    {{!-- ----------------------NavBar--------------------------- --}}
+
+    {{>nav}} {{!-- passing the partials --}}
+
+
+    {{!-- ---------------------------main section------------------------ --}}
+
+    <section id="main">
+        <div id="main-heading">
+            <h1>A JOURNEY THAT STARTED WITH THE</h1>
+            <h1>INNOVATION</h1>
+        </div>
+    </section>
+
+    {{!-- ------------------------Timeline section-------------------------- --}}
+
+    <section id="innovator">
+        <h2 class="h-primary">Crowd-Purpose it's your shop</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis quae accusamus recusandae asperiores sed
+            dicta perferendis culpa eveniet in nulla!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis</p>
+
+        <img src="../../static/img/Timeline.png">
+    </section>
+
+    {{!-- ----------------------Follow section------------------------------ --}}
+
+    <section id="follow">
+        <h1 class="h-secondary">Be With Us on</h1>
+        <div id='follow-img'>
+            <img src="../../static/img/twiter logo.png">
+            <img src="../../static/img/facebook logo.png">
+            <img src="../../static/img/instagram logo.png">
+        </div>
+
+    </section>
+    {{!-- ----------------------Footer--------------------------- --}}
+
+    {{>footer}} {{!-- passing the partials --}}
+
+</body>
+
+</html>

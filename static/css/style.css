@@ -1,0 +1,633 @@
+/* -------------------Css Reset ---------------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ---------------------------------------INDEX PAGE------------------------------------ */
+
+
+
+/* ---------------------Navigation Bar-------------------------- */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* navbar Background */
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.43;
+}
+/* Navigation Bar logo styling */
+
+#logo{
+    padding: 2px;
+    margin: 2px 12px;
+}
+#logo img{
+    height: 50px;
+    width: 51px;
+}
+
+/* Navigation Bar list-item styling */
+
+#navbar ul{
+    display: flex;
+    margin-left: 50px;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#navbar ul li a:hover{
+    background-color: salmon;
+}
+
+/* Navigation Bar cart img styling */
+
+#navbar ul img{
+    height: 30px;
+    display: block;
+    padding: 2px 4px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+#navbar ul img:hover{
+    transform: scale(1.3);
+    transition-duration:0.3s;
+    background-color: salmon;
+}
+
+/* # Navigation Bar search styling */
+
+#search{
+    margin-left: 15rem;
+}
+#search input{
+    padding: 4px;
+    outline: none;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+#search button{
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 14px;
+}
+
+#search button:hover{
+    background-color: salmon;
+}
+
+/* ---------------------Chatbox Section-------------------------- */
+
+#chatbox{
+    position: fixed;
+    bottom: 9px;
+    right: 18px;
+    padding: 8px;
+    border-radius: 21px;
+    background-color: black;
+    cursor:pointer;
+}
+#chatbox > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* ---------------------Home Section-------------------------- */
+
+#home{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 560px;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg-4.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 625px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.79;
+}
+#home p{
+    font-size: 21px;
+    font-family: 'Bree Serif';
+}
+#home button:hover{
+    transition-duration:0.3s;
+    transform: scale(1.3);
+    background-color: brown;
+}
+#home button a{
+    text-decoration: none;
+    color: white;
+}
+/* ---------------------Special Offer Section-------------------------- */
+#special-offer{
+    position: relative;
+    height: 600px;
+    border: 2px solid black;
+}
+#special-offer::before{
+    content: "";
+    background: url('../img/bg-5.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.50;
+}
+#special-offer div{
+    display: block;
+    height: 5rem;
+    width: 32rem;
+    margin: auto;
+    margin-top: 36px;
+    text-align: center;
+    cursor: not-allowed;
+}
+#special-offer div #time{
+    display: inline-block;
+    margin-top: 19px;
+    font-size: 36px;
+    font-weight: bold;
+}
+#special-offer p{
+    display: block;
+    width: 53rem;
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Girassol', cursive;
+}
+/* ---------------------product Section-------------------------- */
+#our-product{
+    display: flex;
+}
+#our-product .box{
+    border: 2px solid brown;
+    padding: 10px;
+    margin: 2px 5px;
+    border-radius: 28px;
+    background: #bea0c8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#our-product .box img{
+    height: 245px;
+    width: 340px;
+    margin: auto;
+    display: block;
+}
+#our-product .box p{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 12px;
+}
+
+/* ---------------------Exclusive product Section-------------------------- */
+
+#exclusive{
+    position: relative;
+    height: 30rem;
+    border: 2px solid black;
+}
+#exclusive::before{
+    content: "";
+    background-color: rgb(238, 240, 146);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 479px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.69;
+}
+#exclusive #Band{
+    height: 360px;
+    width: 380px;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+#exclusive #Band:hover{
+    transform: scale(1.2);
+    transition-duration:0.3s;
+}
+
+#exclusive #exclusive-description{
+    position: absolute;
+    top: 90px;
+    left: 35rem; 
+    text-align: center;
+}
+#exclusive #exclusive-description #App{
+    margin-top: 17px;
+    height: 50px;
+    width: 150px;
+}
+/* ---------------------Client Section-------------------------- */
+
+#clients{
+    position: relative;
+}
+#clients::before{
+    content: "";
+    background-color: rgb(188, 225, 228);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 337px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.69;
+}
+#clients>h1{
+    color: rgb(92, 7, 7);
+}
+#client-container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5,auto);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#client-container img{
+    height: 190px;
+    width: 251px;
+    display: block;
+    margin: auto;
+}
+
+/* ---------------------Footer Section-------------------------- */
+
+#footer{
+    height: 167px;
+    margin-bottom: 3px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid rgb(26, 1, 1);
+}
+#footer::before{
+    content: "";
+    background-color: rgb(27, 27, 27);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 164px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.69;
+}
+#copyright{
+    width: 55rem;
+    margin-top: 16px;
+    text-align: center;
+    padding: 4px;
+    font-size: 1.2rem;
+}
+#copyright p{
+    margin-top: 6px;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* ---------------------------------------Account PAGE------------------------------------ */
+
+/* -----------------Account Section styling--------------- */
+
+#account-section{
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#account-section::before{
+    content: "";
+    background: url('../img/bg-3.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 742px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+/* -------------------login & signup button hover--------------- */
+
+#account-section .btn:hover{
+    background-color: rgb(117, 55, 55);;
+}
+
+/* --------------Form styling---------------------------------- */
+
+.form input{
+    outline: none;
+    display: block;
+    border: 2px solid black;
+    background-color: rgb(184, 243, 243);
+    margin: 11px 0px;
+    padding: 7px 2px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 36rem;
+    border-radius: 9px;
+}
+
+/* -------------------------Form reset & sunbmit styling----------------- */
+
+.form #reset-submit{
+    display: block;
+    width: 15rem;
+    margin: auto;
+}
+
+.form #reset-submit button{
+    padding: 5px 5px;
+    margin: 15px;
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    background: sandybrown;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+.form #reset-submit button:hover{
+    background-color: rgb(177, 118, 67);
+}
+
+/* --------------------Also signin/login logo styling------------------------- */
+
+#with-google-twit-facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    margin-bottom: 10px;
+}
+
+#with-google-twit-facebook img{
+    width: 75px;
+    height: 75px;
+    margin: 9px;
+}
+
+/* ------For the first time signup form will be diaplayed------- */
+
+#login{
+    display: none;
+}
+
+/* ------------------------------------About Us page------------------------------------ */
+
+#main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 538px;
+}
+#main::before{
+    content: "";
+    background: url('../img/bg-2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.79;
+}
+#main #main-heading{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: 'Limelight', cursive;
+}
+
+/* --------------innovator timeline section---------------- */
+#innovator{
+    height: 54rem;
+    text-align: center;
+}
+#innovator p{
+    margin-top: 5px;
+    font-size:22px;
+}
+#innovator img{
+    height: 48rem;
+    width: 100%;
+}
+
+/* ---------------------Follow section----------------------- */
+#follow-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#follow-img img{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
+/* ------------------------------------Order page------------------------------------ */
+
+/* ---------Slid Show images annimation----------- */
+#slidshow{
+    width: 29rem;
+    height: 22rem;
+    margin: 20px auto;
+    background-image: url("../img/preadetor.jpeg");
+    background-size: 100% 100%;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{
+        background-image: url("../img/preadetor.jpeg");
+    }
+    14%{
+        background-image: url("../img/headset.jpeg");
+    }
+    33%{
+        background-image: url("../img/band.jpeg");
+    }
+    55%{
+        background-image: url("../img/bt\ headphone.jpeg");
+    }
+    75%{
+        background-image: url("../img/boat.jpeg");
+    }
+}
+/* ------------Available Products------------ */
+#order{
+    display: grid;
+    grid-gap: 66px 3px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#order a{
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 36px;
+    box-shadow: 7px 9px 10px 3px rgb(212, 184, 182);
+}
+#order a:hover{
+    transform: scale(1.02);
+    box-shadow: 10px 12px 15px 5px rgb(212, 184, 182);
+}
+#order a .mobile {
+    height: 289px;
+    width: 155px;
+}
+#order a .laptop {
+    height: 218px;
+    width: 272px;
+}
+#order a .accessories {
+    height: 268px;
+    width: 252px;
+}
+#order a div{
+    font-size: 16px;
+    color: black;
+}
+
+/* ----------------------------------prd-detail page------------------------------------ */
+
+#main-cont{
+    display: flex;
+    justify-content: center;
+    height: 30rem;
+    margin: 50px 0px;
+    display: flex;
+}
+#main-cont img{
+    height: 29rem;
+    width: 15rem;
+}
+#main-cont #details{
+    margin-top: 3.8rem;
+    margin-left: 1.2rem;
+}
+#main-cont h1{
+    font-size: 2.9rem;
+}
+#main-cont h2{
+    font-size: 2.3rem;
+    margin-top: 25px;
+}
+#main-cont input{
+    width: 34px;
+    height: 30px;
+    outline: none;
+    border: 2px solid black;
+    background-color: rgb(252, 226, 186);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#main-cont button{
+    margin-left: 15px;
+    border: 2px solid black;
+    background-color: rgb(236, 157, 148);
+    padding: 2px;
+    height: 1.8rem;
+    width: 7rem;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 17px;
+    cursor: pointer;
+}
+#main-cont button:hover{
+    background-color: salmon;
+}
+#main-cont p{
+    margin-top: 15px;
+    width: 30rem;
+    font-size: 1.1rem;
+    color: #390091;
+    font-weight: bold;
+}
+
+
+/* ---------------------Utility Classes -----------------------------*/
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(156, 80, 80);
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
